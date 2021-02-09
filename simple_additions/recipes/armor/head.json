@@ -26,7 +26,7 @@
 	"byproducts": [ [ "splinter",180 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_carving" } ],
-    "components": [ [ [ "log", 1 ], [ "cordage_short", 4, "LIST" ] ],[[ "plant_cordage", 6, "LIST" ]] ]
+    "components": [ [ [ "log", 1 ]], [[ "cordage_short", 4, "LIST" ] ],[[ "plant_cordage", 6, "LIST" ]] ]
   }
 
 ]
