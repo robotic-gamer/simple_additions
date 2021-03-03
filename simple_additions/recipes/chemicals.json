@@ -123,7 +123,7 @@
     ],
     "qualities": [ { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
-    "components": [ [ [ "chem_sulphuric_acid", 1 ] ],[["chem_zinc_powder",1],["chem_aluminium_powder",1]] ]
+    "components": [ [ [ "chem_sulphuric_acid", 1 ] ],[["chem_zinc_powder",100],["chem_aluminium_powder",100]] ]
 	},
 	{ 
 	"type": "recipe",
@@ -234,7 +234,25 @@
 	[["chem_muriatic_acid",2]],
 	[["ammonia", 1 ]]
 	]
+  },
+	 {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "morphine_pills",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "survival",
+    "skills_required": [ "firstaid", 1 ],
+    "difficulty": 2,
+    "time": "12 m",
+	"autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 2 } ],
+    "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
+    "components": [ 
+	[["sugar",2],["flour",2]],
+	[["morphine",5],["heroin",2]],
+	[ [ "water", 1 ], [ "water_clean", 1 ] ]
+	]
   }
-
   
   ]

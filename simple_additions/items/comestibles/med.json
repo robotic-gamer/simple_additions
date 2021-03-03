@@ -57,5 +57,29 @@
       "activation_message": "You drink some salicin tea.",
       "effects": [ { "id": "pkill1", "duration": 720 } ]
 	  }
+  },
+    {
+    "id": "morphine_pills",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "morphine pills" },
+    "description": "an opioid palliative produced by converting morphine into an oral form that while less potent is easier to use.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": 3000,
+    "price_postapoc": 15000,
+    "charges": 10,
+    "stack_size": 100,
+    "material": [ "powder" ],
+    "symbol": "!",
+    "color": "pink",
+    "healthy": -2,
+    "addiction_potential": 10,
+    "addiction_type": "opiate",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take a morphine pill.",
+      "effects": [ { "id": "pkill2", "duration": 1080 } ]
+    }
   }
   ]
