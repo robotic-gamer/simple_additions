@@ -1,6 +1,33 @@
   [
     {
     "type": "construction",
+    "id": "constr_fill_water_dp",
+    "group": "fill_deep_water",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "survival", 1 ] ],
+    "time": "120 m",
+    "qualities": [ [ { "id": "DIG", "level": 2 } ] ],
+    "components": [ [ [ "material_soil", 200 ] ]],
+    "pre_terrain": "t_water_dp",
+    "post_terrain": "t_water_sh"
+  },
+	    {
+    "type": "construction",
+    "id": "constr_fill_swater_dp",
+    "group": "fill_deep_water",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "survival", 1 ] ],
+    "time": "120 m",
+    "qualities": [ [ { "id": "DIG", "level": 2 } ] ],
+    "components": [ [ [ "material_soil", 200 ] ]],
+    "pre_terrain": "t_swater_dp",
+    "post_terrain": "t_swater_sh"
+  },
+	
+	
+	
+	{
+    "type": "construction",
     "id": "t_tree_digging_tree_walnut",
     "group": "dig_up_tree",
     "category": "OTHER",

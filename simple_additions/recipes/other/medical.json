@@ -18,7 +18,7 @@
   },
    {
     "type": "recipe",
-	"id_suffix": "frozen_ingredients",
+	"id_suffix": "from_alcohol",
 	"result": "disinfectant_crude",
     "activity_level": "fake",
     "category": "CC_OTHER",

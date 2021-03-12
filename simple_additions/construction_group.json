@@ -8,5 +8,10 @@
     "type": "construction_group",
     "id": "plant_tree",
     "name": "plant tree"
+  },
+    {
+    "type": "construction_group",
+    "id": "fill_deep_water",
+    "name": "fill deep water"
   }
   ]

@@ -18,7 +18,7 @@
     ],
     "qualities": [ { "id": "CHEM", "level": 2 },{ "id": "DISTILL", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
-    "components": [ [ [ "water_clean", 1 ] ], [ [ "willowbark", 2 ] ] ]
+    "components": [ [ [ "water_clean", 1 ] ], [ [ "willowbark", 5 ] ] ]
   },
   {
     "type": "recipe",
@@ -250,8 +250,36 @@
     "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
     "components": [ 
 	[["sugar",2],["flour",2]],
-	[["morphine",5],["heroin",2]],
+	[["morphine",5],["heroin",5]],
 	[ [ "water", 1 ], [ "water_clean", 1 ] ]
+	]
+  },
+  	 {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "gasoline",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_FUEL",
+    "skill_used": "chemistry",
+    "difficulty": 5,
+	"charges": 2000,
+    "time": "48 m",
+	"//0":"fuel is based on primarlly a mix of mesitylene and pseudocumene",
+	"//1":"mesitylene and pseudocumene mix is made by heating acetone with sulfuric acid",
+	"//2":"addition of ether is to hopefully offset the problems of running an engine on 100% toluene which this fuel likely inherits",
+	"//3":"the ether should do this similar to how it is used in starter fluid",
+	"//4":"realisticly this should be called makeshift gasoline but I am not skilled enough to make a new fuel",
+    "book_learn": [
+      [ "adv_chemistry", 6 ],
+      [ "textbook_chemistry", 6 ],
+      [ "recipe_labchem", 6 ],
+      [ "atomic_survival", 5 ]
+    ],
+    "qualities": [ { "id": "CHEM", "level": 2 },{ "id": "DISTILL", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 25, "LIST" ] ],[["chem_sulphuric_acid",-1]] ],
+    "components": [ 
+	[["chem_acetone",9]],
+	[[ "ether", 250 ]]
 	]
   }
   
