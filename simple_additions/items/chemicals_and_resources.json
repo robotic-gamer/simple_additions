@@ -44,9 +44,27 @@
     "color": "white",
     "description": "leftover egg shells from cooking, could be ground down to limestone",
     "material": [ "powder_nonflam" ],
+    "volume": "25 ml",
+    "weight": "133 mg",
+    "bashing": 1,
+    "ammo_type": "components"
+  },
+   {
+    "type": "AMMO",
+    "id": "chem_phosphorus",
+    "//0": "while a solid it is stored under water for safety making it effectively a liquid",
+    "category": "chems",
+    "price": 300,
+    "price_postapoc": 100,
+    "name": { "str_sp": "white phosphorus" },
+    "symbol": "=",
+    "color": "white",
+    "description": "some dangerous looking white phosphorus stored under water, could be used to make some vicious incendiaries",
     "volume": "250 ml",
     "weight": "13350 mg",
     "bashing": 1,
-    "ammo_type": "components"
+    "ammo_type": "components",
+	"phase": "liquid",
+    "container": "bottle_glass"
   }
   ]

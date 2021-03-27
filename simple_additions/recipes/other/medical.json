@@ -27,6 +27,6 @@
     "autolearn": true,
     "book_learn": [ [ "isherwood_herbal_remedies", 1 ] ],
     "time": "30 s",
-    "components": [ [[ "hard_liquor_chem", 1, "LIST" ],["vinegar",5]]]
+    "components": [ [[ "hard_liquor_chem", 1, "LIST" ],["vinegar",16]]]
   }
   ]

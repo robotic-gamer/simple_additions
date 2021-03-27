@@ -24,7 +24,7 @@
     "subcategory": "CSC_OTHER_MATERIALS",
     "skill_used": "survival",
 	"difficulty": 3,
-    "time": "90 m",
+    "time": "60 m",
 	"charges":24,
     "autolearn": true,
 	"qualities": [ { "id": "HAMMER", "level": 2 }],

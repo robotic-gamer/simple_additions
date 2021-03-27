@@ -154,7 +154,7 @@
     "autolearn": true,
     "qualities": [ { "id": "BOIL", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 4, "LIST" ] ] ],
-    "components": [[ [ "yeast",25]], [ [ "water", 1 ], [ "water_clean", 1 ] ],[["salt",5]] ]
+    "components": [[ [ "yeast",25]], [ [ "water", 1 ], [ "water_clean", 1 ] ],[["salt",5],["salt_water",1]] ]
   },
   {
     "type": "recipe",
