@@ -49,10 +49,15 @@
     "batch_time_factors": [ 67, 5 ],
     "tools": [ [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ] ],
     "components": [ 	  [ 
-	    [ "offal", 1 ], 
+	    [ "lung", 1 ], 
+		[ "liver", 1],
+		[ "kidney", 1],
+		[ "sweetbread", 1],
 	    [ "mutant_bug_organs", 1 ], 
 	    [ "brain", 1 ],
-	    [ "meat_stomach", 1, "LIST" ] 
+	    [ "stomach", 1],
+		[ "stomach_large", 1]
+		
 	  ] ]
   },
   {
@@ -69,10 +74,14 @@
     "batch_time_factors": [ 67, 5 ],
     "tools": [ [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
     "components": [ 	  [ 
-	    [ "offal", 1 ], 
+	    [ "lung", 1 ], 
+		[ "liver", 1],
+		[ "kidney", 1],
+		[ "sweetbread", 1],
 	    [ "mutant_bug_organs", 1 ], 
 	    [ "brain", 1 ],
-	    [ "meat_stomach", 1, "LIST" ] 
+	    [ "stomach", 1],
+		[ "stomach_large", 1]
 	  ] ]
   },
     {
