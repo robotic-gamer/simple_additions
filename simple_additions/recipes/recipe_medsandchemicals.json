@@ -193,6 +193,7 @@
     "time": "24 m",
 	"batch_time_factors": [ 80, 4 ],
 	"byproducts": [ [ "material_limestone",1 ] ],
+	"flags": [ "ALLOW_ROTTEN" ],
     "book_learn": [
       [ "adv_chemistry", 2 ],
       [ "textbook_chemistry", 2 ],
@@ -202,7 +203,7 @@
     ],
     "qualities": [ { "id": "CHEM", "level": 2 },{ "id": "DISTILL", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 15, "LIST" ] ]],
-    "components": [ [ [ "feces_bird", 2 ] ],[["material_quicklime",50 ]]]
+    "components": [ [ [ "feces_bird", 25 ] ],[["material_quicklime",50 ]]]
   },
 	 {
     "type": "recipe",
@@ -373,5 +374,34 @@
     "qualities": [ { "id": "CHEM", "level": 2 },{ "id": "DISTILL", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
     "components": [ [ [ "water_clean", 1 ] ], [ [ "plastic_chunk", 15 ] ] ]
-  }
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "cinnamon",
+	"//0":"this recipe is for flour mixed with cinnamaldehyde",
+	"//1":"it should pass as knock off cinnamon powder",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_OTHER",
+    "skill_used": "chemistry",
+    "difficulty": 5,
+    "time": "60 m",
+	"batch_time_factors": [ 80, 4 ],
+    "book_learn": [
+      [ "textbook_chemistry", 4 ],
+      [ "recipe_labchem", 4 ],
+	  [ "adv_chemistry", 4 ]
+	  ],
+	 "qualities": [ { "id": "CHEM", "level": 2 },{ "id": "DISTILL", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
+	"charges": 600,
+	"components": [ 
+	[[ "chem_ethanol", 100 ]],
+	[[ "charcoal", 25 ]],
+	[["chem_phenol",1]],
+	[["chem_zinc_powder",1],["chem_aluminium_powder",1]],
+	[[ "lye_powder", 5 ] ],
+	[["flour",60]]
+	]
+	}
   ]
