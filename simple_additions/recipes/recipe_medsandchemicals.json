@@ -228,7 +228,7 @@
     "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
     "components": [ 
 	[["chem_phenol",1]],
-	[["chem_zinc_powder",1],["chem_aluminium_powder",1]],
+	[["chem_zinc_powder",100],["chem_aluminium_powder",100]],
 	[["chem_glycerol",1]],
 	[["formic_acid",1]],
 	[["chem_muriatic_acid",2]],
@@ -393,15 +393,108 @@
 	  [ "adv_chemistry", 4 ]
 	  ],
 	 "qualities": [ { "id": "CHEM", "level": 2 },{ "id": "DISTILL", "level": 1 } ],
-    "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
+    "tools": [ [ [ "surface_heat", 25, "LIST" ] ],[ [ "silver_small", -1 ] ] ],
 	"charges": 600,
 	"components": [ 
 	[[ "chem_ethanol", 100 ]],
 	[[ "charcoal", 25 ]],
 	[["chem_phenol",1]],
-	[["chem_zinc_powder",1],["chem_aluminium_powder",1]],
+	[["chem_zinc_powder",100],["chem_aluminium_powder",100]],
 	[[ "lye_powder", 5 ] ],
 	[["flour",60]]
 	]
-	}
+	},
+	{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "ammonia",
+	"//0":"production is based off rotting meat",
+	"//1":"rotting protein releases ammonia and h2s among other things",
+	"//2":"bubble the gas through water to capture the ammonia",
+	"//3":"then bubble the remaining gas through bleach to convert the h2s to sulfur",
+	"id_suffix": "from_meat",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_CHEMICALS",
+    "skill_used": "chemistry",
+    "difficulty": 5,
+    "time": "600 m",
+    "batch_time_factors": [ 99, 1 ],
+	"byproducts": [ [ "chem_sulphur",1 ] ],
+	"flags": [ "ALLOW_ROTTEN" ],
+    "book_learn": [
+      [ "textbook_chemistry", 4 ],
+      [ "recipe_labchem", 4 ],
+	  [ "adv_chemistry", 4 ]
+	  ],
+	 "qualities": [ { "id": "CHEM", "level": 2 },{ "id": "DISTILL", "level": 1 } ],
+	 "tools": [ [ [ "surface_heat", 50, "LIST" ] ] ],
+	"charges": 8,
+	"components": [ 
+	[ [ "bleach", 1 ] ],
+	[ [ "meat_red_raw", 100, "LIST" ],[ "meat_tainted", 100 ],[ "dry_meat_tainted", 100 ],[ "dry_meat", 100 ],["protein_powder",400]],
+	[ [ "water_clean", 15 ],[ "water", 15 ] ]
+	]
+	},
+	 {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "chem_guncotton",
+	"//0":" made by nitrating cellulose (rags/cotton balls), with nitric and sulfuric acid",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_CHEMICALS",
+    "skill_used": "chemistry",
+    "difficulty": 4,
+	"charges": 1,
+	"time": "60 m",
+	"batch_time_factors": [ 80, 4 ],
+    "book_learn": [
+      [ "textbook_anarch", 4 ],
+      [ "recipe_bullets", 4 ],
+      [ "manual_shotgun", 4 ],
+      [ "manual_pistol", 4 ],
+      [ "adv_chemistry", 4 ],
+      [ "textbook_chemistry", 4 ]
+    ],
+    "qualities": [ { "id": "CHEM", "level": 2 } ],
+    "components": [ 
+	[ [ "rag", 2 ],["cotton_ball",4] ],
+	[ ["chem_nitric_acid",1 ]],
+	[["chem_sulphuric_acid",1]],
+	[ [ "water_clean", 8 ],[ "water", 8 ] ]
+	]
+  },
+  	 {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "gunpowder",
+	"//0":" this recipe is based on cordite",
+	"//1":" tallow is a substitue for petroleum jelly",
+	"id_suffix": "from_cordite",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_COMPONENTS",
+    "skill_used": "chemistry",
+    "difficulty": 5,
+	"charges": 500,
+	"time": "60 m",
+	"batch_time_factors": [ 80, 4 ],
+    "book_learn": [
+      [ "textbook_anarch", 5 ],
+      [ "recipe_bullets", 5 ],
+      [ "manual_shotgun", 5 ],
+      [ "manual_pistol", 5 ],
+      [ "adv_chemistry", 3 ],
+      [ "textbook_chemistry", 5 ]
+    ],
+    "qualities": [ { "id": "CHEM", "level": 2 } ],
+	"tools": [ [ [ "surface_heat", 50, "LIST" ] ] ],
+    "components": [ 
+	[ [ "chem_guncotton", 5 ]],
+	[ [ "chem_glycerol", 2 ] ],
+	[ ["chem_nitric_acid",1 ]],
+	[["chem_sulphuric_acid",1]],
+	[ [ "edible_tallow_lard", 2, "LIST" ],[ "tallow_tainted", 2 ] ],
+	[["chem_acetone",1]]
+	
+	]
+  }
   ]

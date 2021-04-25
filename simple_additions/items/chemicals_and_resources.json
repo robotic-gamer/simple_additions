@@ -66,5 +66,22 @@
     "ammo_type": "components",
 	"phase": "liquid",
     "container": "bottle_glass"
+  },
+   {
+    "type": "AMMO",
+    "id": "chem_guncotton",
+    "//0": "nitrocellulose",
+    "category": "chems",
+    "price": 300,
+    "price_postapoc": 100,
+    "name": { "str_sp": "guncotton" },
+    "symbol": "=",
+    "color": "white",
+    "description": "explosive nitrocellulose that looks like cotton balls",
+    "material": [ "powder_nonflam" ],
+    "volume": "250 ml",
+    "weight": "13350 mg",
+    "bashing": 1,
+    "ammo_type": "components"
   }
   ]

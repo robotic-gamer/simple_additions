@@ -34,7 +34,7 @@
     "description": "Dehydrated blood.  With proper storage, this dried food will remain edible for an incredibly long time.",
     "price": 900,
     "price_postapoc": 300,
-    "material": [ "powder" ],
+    "primary_material": "cured_meat",
     "volume": "125 ml",
     "flags": [ "EDIBLE_FROZEN" ]
   }
