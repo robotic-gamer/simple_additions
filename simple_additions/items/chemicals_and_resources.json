@@ -83,5 +83,25 @@
     "weight": "13350 mg",
     "bashing": 1,
     "ammo_type": "components"
+  },
+    {
+    "type": "AMMO",
+    "id": "magnesium_hydroxide",
+    "//0": "Mg(OH)2",
+    "category": "chems",
+    "price": 300,
+    "price_postapoc": 100,
+	"count": 100,
+	"stack_size": 100,
+    "name": { "str_sp": "magnesium hydroxide" },
+    "symbol": "=",
+    "color": "white",
+    "description": "some magnesium hydroxide powder that could be processed further",
+    "container": "bag_plastic",
+    "material": [ "powder" ],
+    "volume": "250 ml",
+    "weight": "435 g",
+    "bashing": 1,
+    "ammo_type": "components"
   }
   ]
