@@ -14,9 +14,7 @@
     "symbol": "[",
     "looks_like": "armguard_hard",
     "color": "yellow",
-    "covers": [  "arm_l", "arm_r"  ],
-    "coverage": 30,
-    "encumbrance": 2,
+    "armor": [ { "encumbrance": 2, "coverage": 30, "covers": [ "arm_l", "arm_r" ] } ],
     "material_thickness": 4,
     "flags": [ "WATER_FRIENDLY", "BELTED" ]
   }
